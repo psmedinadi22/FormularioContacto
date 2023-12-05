@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/* Resetear márgenes, relleno y modelo de caja para todos los elementos */
+* {
+    margin: 0; /* Sin márgenes externos por defecto */
+    padding: 0; /* Sin relleno por defecto */
+    box-sizing: border-box; /* El modelo de caja incluye el borde en el ancho y alto */
+    font-family: 'Open Sans', sans-serif; /* Fuente predeterminada para todo el documento */
+}
+
+/* Estilos para el contenedor principal del formulario */
+.container-form {
+    width: 100%; /* Ocupa el ancho completo del elemento padre */
+    max-width: 1100px; /* Ancho máximo del contenedor */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    display: grid; /* Utiliza un sistema de rejilla para organizar elementos secundarios */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho */
+    grid-gap: 50px; /* Espacio entre columnas en la rejilla */
+    margin-top: 90px; /* Margen superior para separar del borde superior */
+}
+
+/* Estilos para los encabezados h2 dentro del contenedor del formulario */
+.container-form h2 {
+    margin-bottom: 15px; /* Margen inferior para separar de otros elementos */
+    font-size: 35px; /* Tamaño de fuente para un aspecto destacado */
+}
+
+/* Estilos para los párrafos dentro del contenedor del formulario */
+.container-form p {
+    font-size: 17px; /* Tamaño de fuente para un texto claro y legible */
+    line-height: 1.6; /* Altura de línea para una legibilidad mejorada */
+    margin-bottom: 30px; /* Margen inferior para separar de otros elementos */
+}
+
+/* Estilos para los enlaces dentro del contenedor del formulario */
+.container-form a {
+    font-size: 17px; /* Tamaño de fuente para un texto claro y legible */
+    display: inline-block; /* Hace que los enlaces ocupen solo el ancho necesario */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    width: 100%; /* Ocupa el ancho completo del contenedor principal */
+    margin-bottom: 15px; /* Margen inferior para separar de otros elementos */
+    color: black; /* Color del texto para un contraste adecuado */
+    font-weight: 700; /* Peso de la fuente para un aspecto más fuerte */
+}
+
+/* Estilos para el icono dentro de los enlaces dentro del contenedor del formulario */
+.container-form a i {
+    color: orange; /* Color del icono para destacarlo */
+    margin-right: 10px; /* Margen derecho para separar el icono del texto */
+}
+
+/* Estilos para los campos de formulario y áreas de texto dentro del contenedor del formulario */
+.container-form form .campo,
+.container-form form textarea {
+    width: 100%; /* Ocupa el ancho completo del contenedor del formulario */
+    padding: 15px 10px; /* Relleno interno para un espacio cómodo */
+    font-size: 16px; /* Tamaño de fuente para un texto claro y legible */
+    border: 1px solid #dbdbdb; /* Borde delgado para un aspecto limpio */
+    margin-bottom: 20px; /* Margen inferior para separar de otros elementos */
+    border-radius: 3px; /* Esquinas redondeadas para un aspecto más suave */
+    outline: 0; /* Elimina el contorno predeterminado en el enfoque */
+}
+
+/* Estilos para el área de texto dentro del formulario */
+.container-form form textarea {
+    max-width: 530px; /* Ancho máximo para un control sobre el tamaño */
+    min-width: 530px; /* Ancho mínimo para mantener la consistencia */
+    min-height: 140px; /* Altura mínima para evitar que sea demasiado pequeño */
+    max-height: 150px; /* Altura máxima para un control sobre el tamaño */
+}
+
+/* Estilos para el botón de enviar dentro del contenedor del formulario */
+.container-form .btn-enviar {
+    padding: 15px; /* Relleno interno para un área de clic cómoda */
+    font-size: 16px; /* Tamaño de fuente para un texto claro y legible */
+    border: none; /* Sin borde para un aspecto más limpio */
+    outline: 0; /* Elimina el contorno predeterminado en el enfoque */
+    background: orange; /* Color de fondo del botón */
+    color: white; /* Color del texto para un contraste adecuado */
+    border-radius: 3px; /* Esquinas redondeadas para un aspecto más suave */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse para indicar clicabilidad */
+    transition: all 300ms ease; /* Efecto de transición suave */
+}
+
+/* Estilos para el botón de enviar al pasar el mouse sobre él */
+.container-form .btn-enviar:hover {
+    background: #e39403; /* Cambia el color de fondo al pasar el mouse */
+}
